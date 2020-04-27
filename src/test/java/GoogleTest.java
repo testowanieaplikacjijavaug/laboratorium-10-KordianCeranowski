@@ -27,6 +27,7 @@ public class GoogleTest {
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
     @BeforeEach
     public void setUp() throws Exception {
         driver.get("https://duckduckgo.com/");
